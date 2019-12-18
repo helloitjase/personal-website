@@ -52,33 +52,36 @@ class Contact extends React.Component {
     return (
       <div>
         <div>Contact Me</div>
-        <form onSubmit={this.sendEmail}>
-          <div>
-            <label>
+        <div>If you would like to contact me for opportunities you can use the form on the right:</div>
+        <div>
+          <form onSubmit={this.sendEmail}>
+            <div>
+              <label>
             Name:
-              <input onChange={this.inputData} value={name} id="name" type="text" />
-            </label>
-          </div>
-          <div>
-            <label>
+                <input onChange={this.inputData} value={name} id="name" type="text" />
+              </label>
+            </div>
+            <div>
+              <label>
             Email:
-              <input onChange={this.inputData} value={email} id="email" type="email" />
-            </label>
-          </div>
-          <div>
-            <label>
+                <input onChange={this.inputData} value={email} id="email" type="email" />
+              </label>
+            </div>
+            <div>
+              <label>
             Subject:
-              <input onChange={this.inputData} value={subject} id="subject" type="text" />
-            </label>
-          </div>
-          <div>
-            <label>
+                <input onChange={this.inputData} value={subject} id="subject" type="text" />
+              </label>
+            </div>
+            <div>
+              <label>
             Message:
-              <textarea onChange={this.inputData} value={message} id="message" />
-            </label>
-          </div>
-          <button type="submit">Send Mail</button>
-        </form>
+                <textarea onChange={this.inputData} value={message} id="message" />
+              </label>
+            </div>
+            <button type="submit">Send Mail</button>
+          </form>
+        </div>
       </div>
     );
   }

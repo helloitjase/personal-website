@@ -15,7 +15,7 @@ const App = (props) => {
       <div>
         <Link to="/">Home</Link>
         <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects">My Projects</Link>
         <Link to="/contact">Contact Me</Link>
       </div>
       <Switch>

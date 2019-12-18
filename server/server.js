@@ -20,7 +20,6 @@ app.post('/api/contactForm', (req, res) => {
       res.send(200);
     }
   });
-  // res.send(200);
 });
 
 app.get('/*', (req, res) => {
