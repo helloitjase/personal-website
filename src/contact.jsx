@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import styles from './css/contact.css';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -52,35 +53,47 @@ class Contact extends React.Component {
     return (
       <div>
         <div>Contact Me</div>
-        <div>If you would like to contact me for opportunities you can use the form on the right:</div>
-        <div>
-          <form onSubmit={this.sendEmail}>
-            <div>
-              <label>
+        <div className={styles.contact_body}>
+          <div className={styles.contact_left}>
+            <div className={styles.contact_left_inner}>
+              Contact Information:
+              <div>Jason Chen</div>
+              <div>Phone#: (650)-823-3712</div>
+              <div>Email: jason.sl.chen@gmail.com</div>
+            </div>
+          </div>
+          <div className={styles.contact_right}>
+            <div>Contact Form:</div>
+            <form onSubmit={this.sendEmail}>
+              <div className={styles.contact_line_inputs}>
+                <label>
             Name:
-                <input onChange={this.inputData} value={name} id="name" type="text" />
-              </label>
-            </div>
-            <div>
-              <label>
+                  <input className={styles.contact_input} onChange={this.inputData} value={name} id="name" type="text" />
+                </label>
+              </div>
+              <div className={styles.contact_line_inputs}>
+                <label>
             Email:
-                <input onChange={this.inputData} value={email} id="email" type="email" />
-              </label>
-            </div>
-            <div>
-              <label>
+                  <input className={styles.contact_input} onChange={this.inputData} value={email} id="email" type="email" />
+                </label>
+              </div>
+              <div className={styles.contact_line_inputs}>
+                <label>
             Subject:
-                <input onChange={this.inputData} value={subject} id="subject" type="text" />
-              </label>
-            </div>
-            <div>
-              <label>
+                  <input className={styles.contact_input} onChange={this.inputData} value={subject} id="subject" type="text" />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <div>
             Message:
-                <textarea onChange={this.inputData} value={message} id="message" />
-              </label>
-            </div>
-            <button type="submit">Send Mail</button>
-          </form>
+                  </div>
+                  <textarea className={styles.contact_input} onChange={this.inputData} value={message} id="message" />
+                </label>
+              </div>
+              <button type="submit">Send Mail</button>
+            </form>
+          </div>
         </div>
       </div>
     );
