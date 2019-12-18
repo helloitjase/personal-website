@@ -8,25 +8,22 @@ import Contact from './contact.jsx';
 import Home from './home.jsx';
 import styles from './css/app.css';
 
-const App = (props) => {
-  console.log(props);
-  return (
-    <Router>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">My Projects</Link>
-        <Link to="/contact">Contact Me</Link>
-      </div>
-      <Switch>
-        <Route path="/contact" component={Contact} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/" component={Home} />
-      </Switch>
-    </Router>
-  );
-};
+const App = (props) => (
+  <Router>
+    <div>
+      <Link to="/">Home</Link>
+      <Link to="/about">About Me</Link>
+      <Link to="/projects">My Projects</Link>
+      <Link to="/contact">Contact Me</Link>
+    </div>
+    <Switch>
+      <Route path="/contact" component={Contact} />
+      <Route path="/about" component={About} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/" component={Home} />
+    </Switch>
+  </Router>
+);
 
 
 export default App;

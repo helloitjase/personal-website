@@ -1,0 +1,18 @@
+.projects_main {
+  border-bottom: 1px solid #8D99AE;
+  
+}
+
+.projects_links {
+  text-decoration: none;
+  color:#D90429;
+}
+
+.projects_links:hover {
+  color:#8D99AE;
+}
+
+.projects_rateThisFood {
+  width: 400px;
+  height: 400px;
+}
