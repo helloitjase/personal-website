@@ -33,7 +33,6 @@ class Contact extends React.Component {
       message,
     })
       .then(() => {
-        console.log('hi');
         this.setState({
           name: '',
           email: '',
