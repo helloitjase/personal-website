@@ -2,7 +2,11 @@ import React from 'react';
 import {
   BrowserRouter as Router, Switch, Route, Link,
 } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import Projects from './projects.jsx';
+import About from './about.jsx';
+import Contact from './contact.jsx';
+import Home from './home.jsx';
+
 
 const App = (props) => {
   console.log(props);
@@ -15,12 +19,13 @@ const App = (props) => {
         <Link to="/contact">Contact Me</Link>
       </div>
       <Switch>
-        <Route path="/contact" component={} />
-        <Route path="/about" component={} />
-        <Route path="/projects" component={} />
-        <Route path="/" component={} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/" component={Home} />
       </Switch>
     </Router>
+
   );
 };
 
