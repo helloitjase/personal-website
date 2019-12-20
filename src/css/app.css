@@ -1,0 +1,15 @@
+.app_bottom {
+  background-color: #2B2D42;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.app_bottom_links {
+  color: #EDF2F4;
+  text-decoration: none;
+}
+.app_bottom_links:hover {
+  color: #8D99AE
+}
