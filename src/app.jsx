@@ -24,9 +24,20 @@ const App = (props) => (
         <Route path="/" component={Home} />
       </Switch>
       <footer className={styles.app_bottom}>
-        <Link className={styles.app_bottom_links} to="/about">About Me</Link>
-        <Link className={styles.app_bottom_links} to="/projects">My Projects</Link>
-        <Link className={styles.app_bottom_links} to="/contact">Contact Me</Link>
+        <div className={styles.app_bottom_main}>
+          <div className={styles.app_bottom_left}>
+            <Link className={styles.app_bottom_links} to="/about">About Me</Link>
+            <Link className={styles.app_bottom_links} to="/projects">My Projects</Link>
+            <Link className={styles.app_bottom_links} to="/contact">Contact Me</Link>
+          </div>
+          <div className={styles.app_bottom_right}>
+            <div className={styles.app_bottom_contact_info}>
+              <div className={styles.app_contact_line_info}>Other Forms of Contact:</div>
+              <div className={styles.app_contact_line_info}>Phone: (650)-823-3712</div>
+              <div className={styles.app_contact_line_info}>Email: jason.sl.chen@gmail.com</div>
+            </div>
+          </div>
+        </div>
       </footer>
     </Router>
   </div>

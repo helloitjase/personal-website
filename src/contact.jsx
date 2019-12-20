@@ -86,13 +86,6 @@ class Contact extends React.Component {
               <button className={styles.contact_submit_button} type="submit">Send</button>
             </form>
           </div>
-          <div className={styles.contact_bottom}>
-            <div className={styles.contact_bottom_inner}>
-              <div className={styles.contact_line_info}>Other Forms of Contact:</div>
-              <div className={styles.contact_line_info}>Phone: (650)-823-3712</div>
-              <div className={styles.contact_line_info}>Email: jason.sl.chen@gmail.com</div>
-            </div>
-          </div>
         </div>
       </div>
     );

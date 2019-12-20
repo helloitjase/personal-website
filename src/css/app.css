@@ -4,6 +4,31 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.app_bottom_main {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.app_bottom_left {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.app_bottom_right {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .app_bottom_links {
@@ -12,4 +37,19 @@
 }
 .app_bottom_links:hover {
   color: #8D99AE
+}
+
+.app_bottom_contact_info {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  color: #EDF2F4;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.app_contact_line_info {
+  width: 100%;
+  line-height: 1.5rem;
 }
