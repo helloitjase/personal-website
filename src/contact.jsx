@@ -54,45 +54,44 @@ class Contact extends React.Component {
       <div>
         <div>Contact Me</div>
         <div className={styles.contact_body}>
-          <div className={styles.contact_left}>
-            <div className={styles.contact_left_inner}>
-              Contact Information:
-              <div>Jason Chen</div>
-              <div>Phone#: (650)-823-3712</div>
-              <div>Email: jason.sl.chen@gmail.com</div>
-            </div>
-          </div>
-          <div className={styles.contact_right}>
-            <div>Contact Form:</div>
+          <div className={styles.contact_top}>
+            <div className={styles.contact_title}>Contact Form:</div>
             <form onSubmit={this.sendEmail}>
               <div className={styles.contact_line_inputs}>
                 <label>
-            Name:
+                  <div className={styles.contact_label}>Name:</div>
                   <input className={styles.contact_input} onChange={this.inputData} value={name} id="name" type="text" />
                 </label>
               </div>
               <div className={styles.contact_line_inputs}>
                 <label>
-            Email:
+                  <div className={styles.contact_label}>Email:</div>
                   <input className={styles.contact_input} onChange={this.inputData} value={email} id="email" type="email" />
                 </label>
               </div>
               <div className={styles.contact_line_inputs}>
                 <label>
-            Subject:
+                  <div className={styles.contact_label}>Subject:</div>
                   <input className={styles.contact_input} onChange={this.inputData} value={subject} id="subject" type="text" />
                 </label>
               </div>
               <div>
                 <label>
                   <div>
-            Message:
+                    <div className={styles.contact_label}>Message:</div>
                   </div>
-                  <textarea className={styles.contact_input} onChange={this.inputData} value={message} id="message" />
+                  <textarea className={`${styles.contact_input} ${styles.contact_input_textarea}`} onChange={this.inputData} value={message} id="message" />
                 </label>
               </div>
-              <button type="submit">Send Mail</button>
+              <button className={styles.contact_submit_button} type="submit">Send</button>
             </form>
+          </div>
+          <div className={styles.contact_bottom}>
+            <div className={styles.contact_bottom_inner}>
+              <div className={styles.contact_line_info}>Other Forms of Contact:</div>
+              <div className={styles.contact_line_info}>Phone: (650)-823-3712</div>
+              <div className={styles.contact_line_info}>Email: jason.sl.chen@gmail.com</div>
+            </div>
           </div>
         </div>
       </div>
