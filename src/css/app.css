@@ -39,6 +39,30 @@
   color: #8D99AE
 }
 
+.app_bottom_ref_link{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-content: center;
+  position: absolute;
+  text-decoration: none;
+}
+
+.app_bottom_linkedin{
+  text-decoration: none;
+  box-shadow: none;
+  color: #EDF2F4;
+  bottom: 10px;
+}
+
+.app_bottom_github {
+  text-decoration: none;
+  box-shadow: none;
+  color: #EDF2F4;
+  bottom: 9px;
+  }
+
+
 .app_bottom_contact_info {
   box-sizing: border-box;
   display: flex;
@@ -49,7 +73,19 @@
   box-sizing: border-box;
 }
 
+.app_contact_phone {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0.1rem;
+}
+
 .app_contact_line_info {
   width: 100%;
   line-height: 1.5rem;
+}
+
+.app_contact_email {
+  position: absolute;
+  bottom: 0.2rem;
+  padding-left: 0.2rem;
 }
