@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  height: 6rem;
 }
 
 .app_bottom_main {
@@ -66,17 +67,32 @@
 .app_bottom_contact_info {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
   color: #EDF2F4;
-  align-content: center;
-  flex-direction: column;
   box-sizing: border-box;
 }
 
+.app_bottom_contact_info_right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.app_bottom_contact_info_left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.app_contact_phone_outer {
+  display: flex;
+}
+
 .app_contact_phone {
-  position: absolute;
   box-sizing: border-box;
-  bottom: 0.1rem;
 }
 
 .app_contact_line_info {
@@ -85,7 +101,5 @@
 }
 
 .app_contact_email {
-  position: absolute;
-  bottom: 0.2rem;
   padding-left: 0.2rem;
 }
