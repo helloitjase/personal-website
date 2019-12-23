@@ -7,7 +7,61 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 6rem;
+  height: 4rem;
+}
+
+
+.app_top {
+  background-color: #2B2D42;
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 5rem;
+}
+
+.app_top_nav {
+  display: flex;
+}
+
+.app_top_each_link {
+  width: 7rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: linear-gradient(to top, #2B2D42, #8d99ae);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 2.25rem;
+}
+
+.app_top_each_link:last-child {
+  margin-right: 0.5rem;
+}
+
+.app_top_each_link:hover {
+  opacity: 0.5;
+}
+
+.app_top_links {
+  color: #EDF2F4;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+/* .app_top_links:hover {
+  color: #8D99AE
+} */
+
+.app_title {
+  color: #EDF2F4;
+  font-size: 3rem;
 }
 
 .app_bottom_main {

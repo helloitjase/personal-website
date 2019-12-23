@@ -11,17 +11,30 @@ import styles from './css/app.css';
 const App = (props) => (
   <div>
     <Router>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">My Projects</Link>
-        <Link to="/contact">Contact Me</Link>
-      </div>
+      <header className={styles.app_top}>
+        <div className={styles.app_title}>Jason Chen</div>
+        <div className={styles.app_top_nav}>
+          <Link className={styles.app_top_links} to="/">
+            <div className={styles.app_top_each_link}>
+              About Me
+            </div>
+          </Link>
+          <Link className={styles.app_top_links} to="/projects">
+            <div className={styles.app_top_each_link}>
+              My Projects
+            </div>
+          </Link>
+          <Link className={styles.app_top_links} to="/contact">
+            <div className={styles.app_top_each_link}>
+              Contact Me
+            </div>
+          </Link>
+        </div>
+      </header>
       <Switch>
         <Route path="/contact" component={Contact} />
-        <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
-        <Route path="/" component={Home} />
+        <Route path="/" component={About} />
       </Switch>
       <footer className={styles.app_bottom}>
         <div className={styles.app_bottom_main}>

@@ -3,7 +3,6 @@ import styles from './css/projects.css';
 
 const Projects = (props) => (
   <div>
-    <div>My Projects</div>
     <div className={styles.projects_main}>
       <div>
         <a className={styles.projects_links} target="https://github.com/UrbanEats/Reservations" href="https://github.com/UrbanEats/Reservations">UrbanEats</a>
