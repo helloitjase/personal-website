@@ -1,6 +1,7 @@
 .about {
   box-sizing: border-box;
-  margin-top: 5%;
+  margin-top: 3%;
+  display: flex;
 }
 .bio_image {
   width: 400px;
