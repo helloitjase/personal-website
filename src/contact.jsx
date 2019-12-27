@@ -51,7 +51,7 @@ class Contact extends React.Component {
       name, email, subject, message,
     } = this.state;
     return (
-      <div>
+      <div className={styles.contact}>
         <div className={styles.contact_body}>
           <div className={styles.contact_top}>
             <div className={styles.contact_title}>Contact Form:</div>

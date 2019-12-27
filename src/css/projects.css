@@ -1,3 +1,8 @@
+.projects {
+  box-sizing: border-box;
+  /* margin-top: 5%; */
+  
+}
 .projects_main {
   border-bottom: 1px solid #8D99AE;
   

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './css/about.css';
 
 const About = (props) => (
-  <div>
+  <div className={styles.about}>
     <div>
       <img className={styles.bio_image} alt="bio-portrait" src="./Jason-Chen.jpg" />
     </div>

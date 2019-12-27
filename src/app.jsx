@@ -9,7 +9,7 @@ import Home from './home.jsx';
 import styles from './css/app.css';
 
 const App = (props) => (
-  <div>
+  <div className={styles.app}>
     <Router>
       <header className={styles.app_top}>
         <div className={styles.app_title}>Jason Chen</div>
