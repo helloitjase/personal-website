@@ -5,7 +5,6 @@ import {
 import Projects from './projects.jsx';
 import About from './about.jsx';
 import Contact from './contact.jsx';
-import Home from './home.jsx';
 import styles from './css/app.css';
 
 const App = (props) => (

@@ -1,0 +1,32 @@
+.category_outer {
+  display: flex;
+
+  height: auto;
+}
+.category_inner {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.edu_degrees {
+  border: 1px solid blue;
+}
+
+.edu_school {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech_about {
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border: 1px solid red;
+}
+
+.tech_about:last-child {
+  margin-bottom: 0;
+
+
+}

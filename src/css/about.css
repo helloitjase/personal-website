@@ -9,32 +9,37 @@
   
 }
 
-.about_categories {
-  display: flex;
+.techs-enter {
+  height: 0px;
 }
 
-.about_category_inner {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
+.techs-enter.techs-enter-active {
+  height: auto;
+  -webkit-transition: height 0.8 ease;
 }
 
-.about_degrees {
-  border: 1px solid blue;
+.techs-leave.techs-leave-active {
+  height: 0px;
+  -webkit-transition: height 0.8 ease;
 }
 
-.about_school {
-  display: flex;
-  justify-content: space-between;
+.example-enter {
+  height: 0px;
 }
 
-.about_tech {
-  box-sizing: border-box;
-  margin-bottom: 1rem;
-  border: 1px solid red;
+.example-enter-active {
+  height: 100px;
+  -webkit-transition: height 1s ease;
 }
 
-.about_tech:last-child {
-  margin-bottom: 0;
+.example-leave-active {
+  height: 0px;
+  -webkit-transition: height 1s ease;
+}
+
+.panel {
+  width: 200px;
+  height: 100px;
+  background: green;
+  margin-top: 10px;
 }
